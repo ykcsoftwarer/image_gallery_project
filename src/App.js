@@ -1,14 +1,16 @@
 import React from 'react'
 import Homepage from './pages/Homepage'
-import styles from '../src/styles/style.css';
-
+import './styles/style.css';
 
 
 const App = () => {
   return (
-    <div>
+    <div className='App'>
     
-    <Homepage/>
+    
+  
+    <Homepage  />
+    
 
     </div>
   )
