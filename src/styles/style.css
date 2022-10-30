@@ -1,4 +1,4 @@
-* {
+ * {
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
@@ -8,7 +8,7 @@
   body {
     font-family: 'Roboto', sans-serif;
  
-    background-color: rgba(169, 94, 231, 0.966);
+    background-color: rgba(161, 108, 161, 0.966);
   }
   
   a {
@@ -41,6 +41,17 @@
     background-color: #1c58a7;
     color: white;
     cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   
   h1 {
@@ -53,6 +64,21 @@
     font-family:cursive
   
   }
+  .info{
+    margin: 10px;
+    text-align: center;
+    color: rgb(130, 7, 253);
+    text-shadow: 4px 4px 4px #222121;
+    letter-spacing: 14px;
+    font-size: 2rem;
+    font-family:cursive
+
+  }
+  .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
   
   .pictures {
     display: -webkit-box;
@@ -72,11 +98,18 @@
     font-size: 1.2rem;
     padding: 1rem;
     width: 400px;
+    object-fit: cover;
+ 
   }
   
   .pictures .picture .imageContainer {
     overflow: hidden;
-    height: 40vh;
+    height: 36vh;
+    width: 36vw;
+       display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
   }
   
   .pictures .picture .imageContainer img {
@@ -86,11 +119,13 @@
        object-fit: cover;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    object-fit: cover;
   }
   
   .pictures .picture .imageContainer img:hover {
     -webkit-transform: scale(1.25);
             transform: scale(1.25);
+            object-fit: cover;
   }
   
   .pictures .picture .info {
@@ -101,5 +136,7 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 0.5rem;
-  }
+    object-fit: cover;
+  } 
   /*# sourceMappingURL=style.css.map */
+
